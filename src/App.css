@@ -1,0 +1,4 @@
+.App .artist-result:hover {
+  cursor: pointer;
+  color: darkslategray;
+}
