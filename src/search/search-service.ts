@@ -8,6 +8,13 @@ export function searchArtist(searchTerm: string): Promise<Artist[]> {
   return axios
     .get(`${BASE_URL}/2.0/?method=artist.search&artist=${searchTerm}&api_key=${API_KEY}&format=json`)
     .then((response: any) => {
-      return response.data?.results?.artistmatches;
+      const artists = response.data?.results?.artistmatches.artist;
+      return artists.map((artist: any) => {
+        console.log(artist.image);
+        return {
+          name: artist.name,
+          image: artist.image?.[1]['#text'],
+        };
+      });
     });
 }
