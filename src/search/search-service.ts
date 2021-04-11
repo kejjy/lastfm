@@ -10,11 +10,14 @@ export function searchArtist(searchTerm: string): Promise<Artist[]> {
     .then((response: any) => {
       const artists = response.data?.results?.artistmatches.artist;
       return artists.map((artist: any) => {
-        console.log(artist.image);
         return {
-          name: artist.name,
-          image: artist.image?.[1]['#text'],
+          ...artist,
+          image: getLastFmImage(artist),
         };
       });
     });
+}
+
+function getLastFmImage(artist: any): string {
+  return artist.image?.[1]['#text'];
 }

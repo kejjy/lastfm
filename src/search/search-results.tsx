@@ -1,5 +1,6 @@
-import { Box, Grid, Paper, Typography } from '@material-ui/core';
-import React, { useState } from 'react';
+import { Grid, Typography } from '@material-ui/core';
+import React from 'react';
+import { useHistory } from 'react-router';
 import { Artist } from '../models/artist';
 
 export interface SearchProps {
@@ -7,16 +8,23 @@ export interface SearchProps {
 }
 
 function SearchResults(props: SearchProps) {
-  const handleClick = (event: any): void => {};
+  const history = useHistory();
+
+  const handleClick = (artist: Artist) => (event: any): void => {
+    history.push({
+      pathname: '/Artist',
+      state: { artist },
+    });
+  };
 
   function displayArtistResult(artist: Artist, index: number): JSX.Element {
     return (
-      <div key={index}>
+      <div key={index} onClick={handleClick(artist)}>
         <Grid container spacing={3}>
-          <Grid item xs={2}>
+          <Grid item xs={1}>
             {<img src={artist.image} alt={`${artist.name}`} />}
           </Grid>
-          <Grid item xs={10}>
+          <Grid item xs={11}>
             <Typography variant="h6" component="h2">
               {artist.name}
             </Typography>
@@ -30,7 +38,7 @@ function SearchResults(props: SearchProps) {
     <div>
       {!!props.artists.length && (
         <Typography variant="h4" component="h2">
-          Results
+          Results ({props.artists.length})
         </Typography>
       )}
       {props.artists?.map((artist, index) => displayArtistResult(artist, index))}
