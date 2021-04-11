@@ -18,11 +18,18 @@ function SearchResults(props: SearchProps) {
   };
 
   function displayArtistResult(artist: Artist, index: number): JSX.Element {
+    let artistImage;
+    if (artist.image) {
+      artistImage = <img src={artist.image} alt={`${artist.name}`} />;
+    } else {
+      artistImage = <div>[No Image]</div>;
+    }
+
     return (
       <div key={index}>
         <Grid container spacing={3}>
           <Grid item xs={1}>
-            {<img src={artist.image} alt={`${artist.name}`} />}
+            {artistImage}
           </Grid>
           <Grid item xs={11}>
             <Typography variant="h6" component="h2" className="artist-result" onClick={handleClick(artist)}>

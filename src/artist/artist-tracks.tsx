@@ -18,6 +18,7 @@ function ArtistTracks(props: ArtistTrackProps) {
   return (
     <div>
       <Typography variant="h5">Top Tracks</Typography>
+      {artistTracks.length === 0 && <Typography>No top tracks for this artist.</Typography>}
       {artistTracks.map((track, index) => {
         return (
           <div key={index}>

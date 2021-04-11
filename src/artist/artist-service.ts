@@ -7,6 +7,9 @@ export function getArtist(artistId: string): Promise<ArtistDetail> {
   return axios
     .get(`${lastfm.BASE_URL}/2.0/?method=artist.getinfo&mbid=${artistId}&api_key=${lastfm.API_KEY}&format=json`)
     .then((response: any) => {
+      if (response.data.error) {
+        return { name: 'Error Ocurred', bio: {} };
+      }
       const artist = response.data?.artist;
       return {
         ...artist,
@@ -19,6 +22,9 @@ export function getTracks(artistId: string): Promise<Track[]> {
   return axios
     .get(`${lastfm.BASE_URL}/2.0/?method=artist.gettoptracks&mbid=${artistId}&api_key=${lastfm.API_KEY}&format=json`)
     .then((response: any) => {
+      if (response.data.error) {
+        return [];
+      }
       const tracks = response.data?.toptracks.track;
       return tracks.map((track: any) => {
         return {

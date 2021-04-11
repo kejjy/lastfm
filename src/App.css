@@ -1,3 +1,7 @@
+.App .MuiGrid-container {
+  margin-top: 20px;
+}
+
 .App .artist-result:hover {
   cursor: pointer;
   color: darkslategray;

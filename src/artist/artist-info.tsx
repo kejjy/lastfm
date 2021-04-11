@@ -18,17 +18,20 @@ function ArtistInfo() {
     getArtist(artist.mbid).then((artist) => setArtistDetails(artist));
   }, [artist]);
 
+  let tourBadge;
+  if (artistDetails?.ontour) {
+    tourBadge = <Chip className="tour-badge" label="On Tour" color="secondary" />;
+  } else {
+    tourBadge = <Chip className="tour-badge" label="Not On Tour" color="primary" />;
+  }
+
   return (
     <div>
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Typography variant="h4" component="h2">
             {artist.name}
-            <Chip
-              className="tour-badge"
-              label={artistDetails?.ontour ? 'On Tour' : 'Not On Tour'}
-              color={artistDetails?.ontour ? 'secondary' : 'primary'}
-            />
+            {tourBadge}
           </Typography>
         </Grid>
         <Grid item xs={12}>
@@ -37,7 +40,7 @@ function ArtistInfo() {
               <Typography>Biography</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>{parse(artistDetails?.bio.content ?? '')}</Typography>
+              <Typography>{parse(artistDetails?.bio.content ?? 'No biography for this artist.')}</Typography>
             </AccordionDetails>
           </Accordion>
         </Grid>
