@@ -7,6 +7,7 @@ import SearchLanding from './search/search-landing';
 import ArtistInfo from './artist/artist-info';
 
 function App() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const history = useHistory();
 
   return (
