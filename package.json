@@ -1,6 +1,6 @@
 {
   "name": "lastfm",
-  "homepage": "http://kejjy.github.io/lastfm"
+  "homepage": "http://kejjy.github.io/lastfm",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
