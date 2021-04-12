@@ -4,6 +4,8 @@ A way to search for artists on last.fm for when you really don't want to use las
 
 Created using create-react-app & my brain.
 
+Visit at https://kejjy.github.io/lastfm/
+
 ## Local Development
 
 Run `npm start` in the terminal to run the app locally.

@@ -45,7 +45,7 @@ describe('Search Landing Tests', () => {
     const searchButton = screen.getByRole('button', { name: 'Search' });
     userEvent.click(searchButton);
 
-    // TO WHOM IT MAY CONCERN... I spent way too much time trying to find the right combination of mock/wait code OOF
+    // TO WHOM IT MAY CONCERN... I spent way too much time trying to find the right combination of mock/wait code, OOF
     // Struggled with this a bit on my last React project and would love to know if this looks good / is there a better way
     await waitFor(() => {
       expect(getSpy).toHaveBeenCalled();
