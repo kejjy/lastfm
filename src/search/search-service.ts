@@ -21,5 +21,5 @@ export function searchArtist(searchTerm: string): Promise<Artist[]> {
 }
 
 function getLastFmImage(artist: any, size: number): string {
-  return artist.image?.[size]['#text'];
+  return artist.image?.[size]?.['#text'];
 }

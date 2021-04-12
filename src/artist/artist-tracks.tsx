@@ -23,7 +23,7 @@ function ArtistTracks(props: ArtistTrackProps) {
         return (
           <div key={index}>
             <Typography className="track">
-              {track.name} <span className="plays">({`${track.playcount} Plays`})</span>
+              {track.name} <span className="plays">({`${track.playcount} plays`})</span>
             </Typography>
           </div>
         );

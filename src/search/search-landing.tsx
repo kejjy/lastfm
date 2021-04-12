@@ -7,11 +7,15 @@ import { searchArtist } from './search-service';
 function SearchLanding() {
   const [searchTerm, setSearchTerm] = useState('');
   const [results, setResults] = useState<Artist[]>([]);
+  const [searchClickedOnce, setSearchClickedOnce] = useState(false);
 
   const handleClick = (event: any): void => {
-    searchArtist(searchTerm).then((artists: Artist[]) => {
-      setResults(artists);
-    });
+    if (searchTerm.length) {
+      searchArtist(searchTerm).then((artists: Artist[]) => {
+        setResults(artists);
+        setSearchClickedOnce(true);
+      });
+    }
   };
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
@@ -34,7 +38,7 @@ function SearchLanding() {
         </Button>
       </FormGroup>
 
-      <SearchResults artists={results} />
+      <SearchResults artists={results} searchClickedOnce={searchClickedOnce} />
     </div>
   );
 }

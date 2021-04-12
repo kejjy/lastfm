@@ -29,14 +29,14 @@ function ArtistInfo() {
     <div>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Typography variant="h4" component="h2">
+          <Typography variant="h4">
             {artist.name}
             {tourBadge}
           </Typography>
         </Grid>
         <Grid item xs={12}>
           <Accordion>
-            <AccordionSummary id="panel1a-header" expandIcon={<ExpandMoreIcon />}>
+            <AccordionSummary id="bio-header" expandIcon={<ExpandMoreIcon />}>
               <Typography>Biography</Typography>
             </AccordionSummary>
             <AccordionDetails>

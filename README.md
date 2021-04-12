@@ -14,5 +14,6 @@ Run `npm test` to run tests.
 
 ## If I Had More Time...
 
-- Use the concept of styled components for the few cusom Material UI styles I have
+- Use the concept of styled components for the few custom Material UI styles I have
 - More descriptive error handling
+- Loading spinners
