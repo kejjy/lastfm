@@ -1,6 +1,6 @@
 # Last.fm Search
 
-A way to search for artists on last.fm for when you really don't want to use last.fm's website.s
+A way to search for artists on last.fm for when you really don't want to use last.fm's website
 
 Created using create-react-app & my brain.
 
@@ -11,6 +11,8 @@ Visit at https://kejjy.github.io/lastfm/
 Run `npm start` in the terminal to run the app locally.
 
 Run `npm test` to run tests.
+
+Note for myself: run `npm run deploy` to redeploy to GH pages.
 
 **Note:** a console error appears when opening the Biography accordion - this is an [issue with MaterialUI](https://github.com/mui-org/material-ui/issues/13394) & react strict mode. It would not show in production.
 
