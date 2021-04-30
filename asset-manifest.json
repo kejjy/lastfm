@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/lastfm/static/css/main.0e4511c1.chunk.css",
-    "main.js": "/lastfm/static/js/main.b877157f.chunk.js",
-    "main.js.map": "/lastfm/static/js/main.b877157f.chunk.js.map",
-    "runtime-main.js": "/lastfm/static/js/runtime-main.aef7ec3c.js",
-    "runtime-main.js.map": "/lastfm/static/js/runtime-main.aef7ec3c.js.map",
-    "static/js/2.ae394d2f.chunk.js": "/lastfm/static/js/2.ae394d2f.chunk.js",
-    "static/js/2.ae394d2f.chunk.js.map": "/lastfm/static/js/2.ae394d2f.chunk.js.map",
-    "static/js/3.e67b1aa0.chunk.js": "/lastfm/static/js/3.e67b1aa0.chunk.js",
-    "static/js/3.e67b1aa0.chunk.js.map": "/lastfm/static/js/3.e67b1aa0.chunk.js.map",
+    "main.js": "/lastfm/static/js/main.4e51c595.chunk.js",
+    "main.js.map": "/lastfm/static/js/main.4e51c595.chunk.js.map",
+    "runtime-main.js": "/lastfm/static/js/runtime-main.321bac64.js",
+    "runtime-main.js.map": "/lastfm/static/js/runtime-main.321bac64.js.map",
+    "static/js/2.9b56313b.chunk.js": "/lastfm/static/js/2.9b56313b.chunk.js",
+    "static/js/2.9b56313b.chunk.js.map": "/lastfm/static/js/2.9b56313b.chunk.js.map",
+    "static/js/3.06dfc0e0.chunk.js": "/lastfm/static/js/3.06dfc0e0.chunk.js",
+    "static/js/3.06dfc0e0.chunk.js.map": "/lastfm/static/js/3.06dfc0e0.chunk.js.map",
     "index.html": "/lastfm/index.html",
     "static/css/main.0e4511c1.chunk.css.map": "/lastfm/static/css/main.0e4511c1.chunk.css.map",
-    "static/js/2.ae394d2f.chunk.js.LICENSE.txt": "/lastfm/static/js/2.ae394d2f.chunk.js.LICENSE.txt"
+    "static/js/2.9b56313b.chunk.js.LICENSE.txt": "/lastfm/static/js/2.9b56313b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.aef7ec3c.js",
-    "static/js/2.ae394d2f.chunk.js",
+    "static/js/runtime-main.321bac64.js",
+    "static/js/2.9b56313b.chunk.js",
     "static/css/main.0e4511c1.chunk.css",
-    "static/js/main.b877157f.chunk.js"
+    "static/js/main.4e51c595.chunk.js"
   ]
 }
