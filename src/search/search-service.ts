@@ -14,7 +14,6 @@ export function searchArtist(searchTerm: string, page: number): Promise<SearchRe
     .then((response: any) => {
       const data = response.data?.results;
       const artists = data?.artistmatches.artist;
-      console.log(response.data?.results);
 
       return {
         artists: artists?.map((artist: any) => mapToArtist(artist)),
