@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lastfm/static/css/main.0e4511c1.chunk.css",
-    "main.js": "/lastfm/static/js/main.4e51c595.chunk.js",
-    "main.js.map": "/lastfm/static/js/main.4e51c595.chunk.js.map",
+    "main.js": "/lastfm/static/js/main.ffd70699.chunk.js",
+    "main.js.map": "/lastfm/static/js/main.ffd70699.chunk.js.map",
     "runtime-main.js": "/lastfm/static/js/runtime-main.321bac64.js",
     "runtime-main.js.map": "/lastfm/static/js/runtime-main.321bac64.js.map",
     "static/js/2.9b56313b.chunk.js": "/lastfm/static/js/2.9b56313b.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.321bac64.js",
     "static/js/2.9b56313b.chunk.js",
     "static/css/main.0e4511c1.chunk.css",
-    "static/js/main.4e51c595.chunk.js"
+    "static/js/main.ffd70699.chunk.js"
   ]
 }
