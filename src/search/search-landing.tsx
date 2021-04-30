@@ -61,7 +61,12 @@ function SearchLanding() {
       </Typography>
 
       <FormGroup>
-        <TextField id="search-term" label="Search for Artist" variant="outlined" onChange={handleSearchTermChange} />
+        <TextField
+          id="search-term"
+          label="Start typing to search for an artist"
+          variant="outlined"
+          onChange={handleSearchTermChange}
+        />
       </FormGroup>
 
       {!!results?.length && (
